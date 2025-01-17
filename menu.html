@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu with Cart</title>
+    <link rel="stylesheet" href="menu.css" class="menu css">
+     <style>
+        
+     </style>
+    <script src="menu.js"></script>
+</head>
+<body>
+    
+    <!-- <h3>Restaurant...</h3> -->
+    <div class="menu-container">
+
+        
+        <!-- Search Bar -->
+        <input type="text" id="search-bar" placeholder="Search for dishes..." />
+
+        <h1>Menu</h1>
+
+
+        <br>
+        <h2>Vegetarian</h2>
+        <br>
+        <div class="menu">
+            <div class="menu-item" data-dish="Paneer Tikka">
+                <h2>Paneer Tikka</h2>
+                <p>180/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+ </button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Hara Bhara Kabab">
+                <h2>Hara Bhara Kabab</h2>
+                <p>150/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Vegetarian Pakoda">
+                <h2>Vegetarian Pakoda</h2>
+                <p>150/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Samosa(2PCS)">
+                <h2>Samosa(2PCS)</h2>
+                <p>50/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Aloo Tikki">
+                <h2>Aloo Tikki</h2>
+                <p>80/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Dhokla">
+                <h2>Dhokla</h2>
+                <p>100/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Chilli Paneer">
+                <h2>Chilli Paneer</h2>
+                <p>200/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Spring Rolls">
+                <h2>Spring Rolls</h2>
+                <p>150/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Paneer Butter Masala">
+                <h2>Paneer Butter Masala</h2>
+                <p>250/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Shahi Paneer">
+                <h2>Shahi Paneer</h2>
+                <p>260/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Kadai Paneer">
+                <h2>Kadai Paneer</h2>
+                <p>240/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Palak Paneer">
+                <h2>Palak Paneer</h2>
+                <p>230/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more menu items similarly... -->
+        </div>
+
+        <br>
+        <h2>Non-vegetarian</h2>
+        <br>
+
+        <div class="menu">
+            <div class="menu-item" data-dish="Chicken Tikka">
+                <h2>Chicken Tikka</h2>
+                <p>250/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Chicken Biryani">
+                <h2>Chicken Biryani</h2>
+                <p>320/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Mutton Seekh Kabab">
+                <h2>Mutton Seekh Kabab</h2>
+                <p>350/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Tandooree Chicken">
+                <h2>Tandooree Chicken</h2>
+                <p>300/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Prawn Fry">
+                <h2>Prawn Fry</h2>
+                <p>300/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Chicken lollypop">
+                <h2>Chicken lollypop</h2>
+                <p>200/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Gabouti Kabab">
+                <h2>Gabouti Kabab</h2>
+                <p>300/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Kadai Chicken">
+                <h2>Kadai Chicken</h2>
+                <p>300/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Chicken Chettinad">
+                <h2>Chicken Chettinad</h2>
+                <p>320/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Mutton Rogan Josh">
+                <h2>Mutton Rogan Josh</h2>
+                <p>400/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Mutton curry">
+                <h2>Mutton curry</h2>
+                <p>380/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-dish="Egg Curry">
+                <h2>Egg Curry</h2>
+                <p>120/-</p>
+                <button class="quantity-decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-increase">+</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more menu items similarly... -->
+        </div>
+    </div>
+    <button class="button" onclick="dialPhoneNumber()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 32 32" height="32" fill="none" class="svg-icon"><path stroke-width="2" stroke-linecap="round" stroke="#fff" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd"></path></svg>
+      </button>
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul  id="cart-items">
+            <hr>
+            <!-- Cart items will appear here -->
+        </ul>
+        <div class="cart-details">
+            <label for="table-number">Table Number:</label>
+            <select id="table-number">
+                <option value="">Select Table</option>
+                <!-- Generate table numbers 1 to 20 -->
+                <option value="1">Table 1</option>
+                <option value="2">Table 2</option>
+                <option value="3">Table 3</option>
+                <option value="4">Table 4</option>
+                <option value="5">Table 5</option>
+                <option value="6">Table 6</option>
+                <option value="7">Table 7</option>
+                <option value="8">Table 8</option>
+                <option value="9">Table 9</option>
+                <option value="10">Table 10</option>
+                <option value="11">Table 11</option>
+                <option value="12">Table 12</option>
+                <option value="13">Table 13</option>
+                <option value="14">Table 14</option>
+                <option value="15">Table 15</option>
+                <option value="16">Table 16</option>
+                <option value="17">Table 17</option>
+                <option value="18">Table 18</option>
+                <option value="19">Table 19</option>
+                <option value="20">Table 20</option>
+            </select>
+            <br><br>
+
+            <label for="phone-number">Phone Number:</label>
+            <input type="text" id="phone-number" placeholder="Enter your phone number" />
+            <br><br>
+        </div>
+        <!-- <button id="checkout-button">Checkout</button> -->
+        <button id="close-cart-button">x</button> <!-- Close Cart Button -->
+        <div class="suggestion-box">
+            <h3>Suggestions for your order...</h3>
+            <textarea id="suggestion-text" placeholder="Write your suggestions here..." rows="4" cols="50"></textarea>
+            <br>
+            <!-- <button id="submit-suggestion">Submit</button> -->
+        </div>
+        <button id="checkout-button">Place Order</button>
+    </div>
+    <!-- <button data-quantity="0" class="btn-cart" id="toggle-cart-button">
+          <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+            <title>icon-cart</title>
+            <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+          </svg>
+          <span class="quantity"></span>
+        </button> -->
+    <button id="toggle-cart-button">Cart (0)</button>
+
+
+</body>
+</html>
